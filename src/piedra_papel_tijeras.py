@@ -5,14 +5,12 @@ def ordenador_decide_jugada():
     Elige aleatoriamente entre piedra, papel o tijeras y devuelve la elección.     
     '''
     opciones = ["piedra", "papel", "tijeras"]
-    res = random.choice(opcion)
+    res = random.choice(opciones)
 
-    def usuario_decide_jugada():
-    ''' 
-    Pide al usuario que elija entre piedra, papel o tijeras y devuelve la elección.     
-    '''
-    eleccion_usuario = input("Elige piedra, papel o tijeras: ")    
-    return eleccion_usuario
+def usuario_decide_jugada(eleccion_usuario):
+
+     eleccion_usuario = input("Elige piedra, papel o tijeras: ")    
+     return eleccion_usuario
 
 def determina_ganador(jugada_usuario, jugada_ordenador):
     if jugada_usuario == jugada_ordenador:
